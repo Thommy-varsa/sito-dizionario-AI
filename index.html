@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Traduttore AI - Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Traduttore & Analisi grammaticale (Demo)</h1>
+
+    <label for="inputText">Testo da analizzare / tradurre</label>
+    <textarea id="inputText" rows="6" placeholder="Inserisci qui il testo..."></textarea>
+
+    <label for="targetLanguage">Lingua di destinazione</label>
+    <select id="targetLanguage">
+      <option value="Inglese">Inglese</option>
+      <option value="Spagnolo">Spagnolo</option>
+      <option value="Francese">Francese</option>
+      <option value="Tedesco">Tedesco</option>
+    </select>
+
+    <button id="analyzeBtn">Analizza Testo</button>
+
+    <div id="outputResult" class="resultBox" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
